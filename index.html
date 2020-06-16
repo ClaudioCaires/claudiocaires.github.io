@@ -85,8 +85,8 @@
         <div class="row">
           <div class="intro-text">
             <h1>Claudio Caires</h1>
-            <p>BI \ Data Architect, Analyst & Developer<br />
-            Data Scientist (in the process)</p>
+            <p>BI / Data Architect, Analyst & Developer<br />
+            Data Scientist (in progress)</p>
             <a href="#dwh" class="btn btn-custom btn-lg page-scroll">Next section</a> </div>
         </div>
       </div>
@@ -112,10 +112,10 @@
           <hr>
           <p>Below a glimpse to some of my most relevant projects.<br />
           In order to improve legibility they are grouped in sections.<br />
-          Every section botton (one botton = one project) displays the project summary (very brief), focusing on:
+          Every section button (one button = one project) displays a brief summary, focusing on:
           <li>My role</li>
           <li>Previous existing product characteristics</li>
-          <li>New product requirements (business focus)</li>
+          <li>New product requirements (stakeholders view)</li>
           <li>New product characteristics</li></p>
           <!--<h3>Awarded Chefs</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>-->
@@ -134,7 +134,7 @@
     <div class="overlay">
       <h2>Datawarehouse & Data Marts</h2>
       <hr>
-      <p><small>All created from scratch in big size companies</small></p>
+      <!--<p><small>All created from scratch in big size companies</small></p>-->
       <a href="#mdm" class="btn btn-custom btn-lg page-scroll">Next section</a>
     </div>
   </div>
@@ -145,11 +145,11 @@
           <li>
             <ol class="type">
               <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
-              <li><a href="#" data-filter=".hdmscd0" class="active">Healthcare DM SCD0</a></li>
-              <li><a href="#" data-filter=".hdmd">Healthcare DM dmd & SCD0</a></li>
-              <li><a href="#" data-filter=".hr">Human Resources DM</a></li>
-              <li><a href="#" data-filter=".fin">Financial DM</a></li>
-              <li><a href="#" data-filter=".pro">Production DM</a></li>
+              <li><a href="#" data-filter=".dwh010" class="active">Healthcare DM SCD0</a></li>
+              <li><a href="#" data-filter=".dwh020">Healthcare DM dmd & SCD0</a></li>
+              <li><a href="#" data-filter=".dwh030">Human Resources DM</a></li>
+              <li><a href="#" data-filter=".dwh040">Financial DM</a></li>
+              <li><a href="#" data-filter=".dwh050">Production DM</a></li>
             </ol>
           </li>
         </ul>
@@ -159,155 +159,176 @@
     <div class="row">
       <div class="dwh-items">
 
-        <div class="col-sm-10 col-md-10 col-lg-12 hdmscd0">
+        <div class="col-sm-10 col-md-10 col-lg-12 dwh010">
           <h2>Healthcare Data Mart with SCD0</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team            
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>No analytical system existed.<br />
-          All reporting came from operational databases.</p>
+          <p>No analytical product existed.<br />
+            All analytical reporting came from different, independent operational products (silos). Due to that:<br />
+            •	They had big performance and scalability problems<br />
+            •	They impacted heavily in ‘normal’ operational products performance<br />
+            •	They had critical data integration problems            
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>Huge data integration problems due to the creation of analytical reporting and KPI from independent operational databases.<br />
-          Existing analytical and operational reporting had big performance and maintenance problems.<br />
-          Different corporate roles created different corporate reports and KPI with similar nomenclature but obtained using different criteria.<br />
-          Recent data (months) can be changed and no mark is set.<br />
-          Identified several (tents) of operational products to integrate.<br />
-          Creation of an integration process that could merge master data from different operational systems.<br />
-          Analytical solution should have an initial maximum delay of 7 days. NOTE: Afterwards a new requirement wanted a 24 hour delay maximum.<br />
-          Creation of a scalable solution.<br />
-          Creation of a low maintenance cost solution.<br />
-          Lowest operational impact possible.</p>
+          <p>Product Owner wanted a complete Healthcare analytical solution for all clinical activity data.<br />
+            Data should have a maximum delay of 24 hours.<br />
+            Solution should be able to integrate tents of independent operational products.            
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>Creation of a SCD0 Data Mart solution that integrates data from several operational products (silos).<br />
-          Scalable solution that continuously integrates new operational products (silos) quite fast (low cost).<br />
-          Low maintenance system.<br />
-          Minimum precedence exists.</p>
+          <p>A SCD0 Healthcare Data Mart was created with clinical activity data.<br />
+            Kimball methodology was used for modelling the business processes (Dimensional modelling).<br />
+            All main business requirements were implemented.            
+          </p>
+
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 hdmd">
-          <h2>Healthcare Data Mart with dmd and SCD6</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 dwh020">
+          <h2>Healthcare Data Mart with MDM and SCD6</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>We’ve created previously the first analytical system. See Healthcare Data Mart with SCD0 (presented before).<br />
-          Many operational systems don’t keep changes on master data attributes.</p>
+          <p>A previous Data Mart existed created ourselves (see previous presented product: Healthcare Data Mart with SCD0).<br />
+            Many operational systems don’t keep changes on master data attributes.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
           <p>Product owner wanted to mitigate the technical debt that existed on previous development.<br />
-          Apply the new BI architecture, methodology and ETL framework developed meanwhile the previous DM was created.<br />
-          Implement into a new solution a much greater concern into creating a scalable, simple and low maintenance cost system.<br />
-          Need to monitor and present change to some dimension attributes (SCD6) even when operational systems don’t keep them.<br />
-          Prepare the system for Self-Service use by business owners.</p>
+            Specific dimension attributes should preserve historical data even when source operational products don’t record changes.<br />
+            System must be prepared for use with Self-Service solutions.<br />
+            New product should be scalable and have a low maintenance cost.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>The previous created analytical solution was refactored.<br />
-          The implementation of a new architecture, methodology and ETL framework changed completely the new product version.<br />
-          New solution is scalable, simpler (much less precedencies between components) and has a lower maintenance cost.<br />
-          The solution takes control of all changes made in most important attributes of operational master data, even when operational system didn’t keep control of it.<br />
-          Creation of a new Semantic layer for Self-Service use with business nomenclature.</p>
+          <p>A new Data Mart solution was created with Slowly Changing Dimension 6.<br />
+            Kimball methodology was used for modelling the business processes (Dimensional modelling).<br />
+            Applied a new BI architecture, methodology and ETL framework that significantly boosted scalability and reduced maintenance cost.<br />
+            Created a new Semantic layer for Self-Service use. Extensive business nomenclature was implemented in Dimensional modelling DM.<br />
+            All main business requirements were implemented.
+          </p>
           
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 hr">
+        <div class="col-sm-10 col-md-10 col-lg-12 dwh030">
           <h2>Human Resources Data Mart</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>BI Architect, Analyst and Developer</p>
+          <p>BI Architect, Analyst and Developer
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>A Human Resources Data Mart existed with several important bugs that lead to confidence lost and then to an unused solution.<br />
-          Data flow from operation to analytical solution was made based on cumulative changes.<br />
-          Dimensional modelling and Multidimensional model wasn’t business semantic friendly.</p>
+          <p>A Human Resources Data Mart existed with little use due to lack of confidence as several important bugs existed.<br />
+            Analytical solution was almost a copy of the operational schema (3FN) and wasn’t business semantic friendly.<br />
+            Maintenance cost was very high (operation and support).
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>Use of a new architecture that includes SSAS Tabular and PowerBI.<br />
-          Create a new solution that eliminates the cyclic bugs from previous version.</p>
+          <p>Product owner wanted a new solution that eliminated the cyclic bugs from previous product.<br />
+            A Self-Service solution was being created against the new solution.<br />
+            New solution should have a low maintenance cost.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>Created a new solution that changed completely architecture and start using a new ETL framework.<br />
-          All cycling bugs that were created before disappeared.<br />
-          New solution won the confidence of business users and started to be widely used.<br />
-          A new semantic layer was created visible in dimensional and tabular models.<br />
-          Power user’s role was created and Self-Service reporting was implemented using Power BI.</p>
+          <p>A new Human Resources DM was created using Kimball methodology.<br />
+            Solution was created using new BI infrastructure: SSAS Tabular and Power BI.<br />
+            A new semantic layer was created visible in dimensional and tabular models.<br />
+            Power user’s role was created and Self-Service was implemented using Power BI.<br />
+            Product maintenance cost was very low.<br />
+            All main business requirements were implemented.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 fin">
+        <div class="col-sm-10 col-md-10 col-lg-12 dwh040">
           <h2>Financial Data Mart</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>BI Architect, Analyst and Developer</p>
+          <p>BI Architect, Analyst and Developer
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>A Financial Data Mart existed, basically around Accounting and Center Cost dimensions (Budget and Real) with high granularity data.<br />
-          Operation and support costs were very high, there were a lot of manual tasks. Troubleshooting times were very big and any incidence would take long times to solve.</p>
+          <p>A Financial Data Mart existed with high granularity data around Financial Accounts and Center Cost dimensions (Budgeting and Real).<br />
+            Several corporate dimensions allow an integrated vision of different countries companies.<br />
+            Operation and support costs were very high with a lot of manual tasks. Troubleshooting times were also very big.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>More data should be inserted into the model and existing data should have lower granularity (higher detail).<br />
-          Operation and support costs should be heavily reduced. <br />
-          Product Owner wanted faster developing cycles<br />
-          A Self-Service solution was demanded by several business users.</p>
+          <p>Product owner wanted to have lower granularity data (higher data detail).<br />
+            New hierarchies should be created in order to improve analysis.<br />
+            Operation and maintenance costs should be heavily reduced.<br />
+            A Self-Service solution should be created for data analysis by power users.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>Created a new Financial solution that has a completely new architecture and started using a new ETL framework.<br />
-          A new semantic layer was created visible in dimensional and tabular models.<br />
-          Power user’s role was created and Self-Service reporting was implemented using Power BI.<br />
-          Added much more business process data including in several cases much more level of detail (lower granularity).</p>
+          <p>Created a new Financial solution using Kimball methodology.<br />
+            Solution was created using new BI infrastructure: SSAS Tabular and Power BI.<br />
+            Used a new ETL framework (with BIML) and added low granularity data.<br />
+            A new semantic layer was created visible in dimensional and tabular models.<br />
+            Power user’s role was created and Self-Service reporting was implemented using Power BI.<br />
+            All main business requirements were implemented.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 pro">
+        <div class="col-sm-10 col-md-10 col-lg-12 dwh050">
           <h2>Production Data Mart</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>BI Architect, Analyst and Developer</p>
+          <p>BI Architect, Analyst and Developer
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>Production data Data Mart existed composed of two DM layers, local and corporate.<br />
-          Basically the local layer was connected to data sources and corporate layer was connect to local layer. Granularity was a bit higher on corporate layer.<br />
-          There was one local layer (solution) but several local layers (solutions). Aggregation between local layers was made in corporate layer.<br />
-          The cost of maintaining so many solution was very high.<br />
-          In many cases data presented in corporate layer didn’t match local data exactly.<br />
-          Solution is implemented all around the globe and in on premise architecture.</p>
+          <p>Several Production Data Mart’s existed, 1 corporate and several local distributed in several countries all around the globe.<br />
+            Corporate DM had higher granularity than local ones.<br />
+            The cost of maintaining so many solutions was very high.<br />
+            Data between DM’s had several synchronization problems.<br />
+            Solution was implemented in on premise architecture.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>Product owner wants to create a single analytical solution for global use with much lower granularity (biggest possible).<br />
-          Cost of operation and support should be highly reduced.</p>
+          <p>Product owner wanted to create a single analytical solution for global use with much lower granularity (biggest possible).<br />
+            Cost of operation and support should be heavily reduced.<br />
+            Product should be scalable and should be prepared for new functionalities short-term, such as: Self-Service Reporting, Data Discovery; Balance Scorecard reporting; IoT analysis integration; Predictive modelling; etc.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>One new DM analytical solution was created.<br />
-          The new architecture was 100% on-cloud and is used all around the globe by all previous business users maintaining user’s experience.<br />
-          Operation and support cost diminished greatly not only for the creation of a single solution but also because of the use of a new Architecture and ETL framework.<br />
-          A new semantic layer was created visible in dimensional and tabular models.<br />
-          Power user’s role was created and Self-Service reporting was implemented using Power BI.</p>
+            The new architecture was 100% on-cloud and is used all around the globe by all previous business users maintaining user’s experience.<br />
+            Operation and support cost diminished greatly not only for the creation of a single solution but also because of the use of a new Architecture and ETL framework (with BIML).<br />
+            A new semantic layer was created visible in dimensional and tabular models.<br />
+            Power user’s role was created and Self-Service reporting was implemented using Power BI.<br />
+            All main business requirements were implemented.
+          </p>
 
         </div>
       </div>
@@ -335,10 +356,11 @@
           <li>
             <ol class="type">
               <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
-              <li><a href="#" data-filter=".rmdm" class="active">Registry MDM</a></li>
-              <li><a href="#" data-filter=".rcmdm">Registry & Centralized MDM</a></li>
-              <li><a href="#" data-filter=".dd">Data Dictionary</a></li>
-              <li><a href="#" data-filter=".cdg">Corporate Data Governance</a></li>
+              <li><a href="#" data-filter=".mdm010" class="active">Registry MDM</a></li>
+              <li><a href="#" data-filter=".mdm020">Registry & Centralized MDM</a></li>
+              <li><a href="#" data-filter=".mdm030">Data Dictionary</a></li>
+              <li><a href="#" data-filter=".mdm040">Corporate Data Governance</a></li>
+              <li><a href="#" data-filter=".mdm050">Data Masking</a></li>
             </ol>
           </li>
         </ul>
@@ -348,120 +370,166 @@
     <div class="row">
       <div class="mdm-items">
 
-        <div class="col-sm-10 col-md-10 col-lg-12 rmdm">
-          <h2>In-house Registry Master Data Using Heuristic Rules</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 mdm010">
+          <h2>In-house Registry Master Data</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>No MDM product existed neither an integrated alike product.<br />
-          Tens of operational products existed as silos (only with communication interfaces between products existed).<br />
-          Integrated data analysis was a big challenge.</p>
+          <p>No MDM product existed neither a similar integrated alike product.<br />
+            Tens of operational products existed as silos.<br />
+            Integrated data analysis was a really big challenge.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>Business users decided a MDM alike system was needed.<br />
-          There no big resources in order to create a new solutions.<br />
-          The system should infer (as much as possible) the master data mapping between operational products.<br />
-          For version 1 no specific human resource exists in order to validate and set master data mapping between operational systems.</p>
+          <p>Product Owner wanted a MDM system in order to integrate different operational Master Data.<br />
+            The system should infer (as much as possible) the master data mapping between operational products master data.<br />
+            For version 1 no specific human resource existed in order to validate or set master data mapping between operational systems.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>An in-house MDM system registry type was created.<br />
-          For version 1 heuristic rules were applied in order to match as many codes and descriptions as possible between tens of master tables from operational products.<br />
-          Final solution and data mapping was defined by business users as ‘a huge step forward’ regarding data integration.<br />
-          This solution was the base for the first Data Mart of the company.</p>
+            For version 1 heuristic rules were applied in order to match as many codes and descriptions as possible between tens of master tables from operational products.<br />
+            The product created was defined by stakeholders as ‘a huge step forward’ regarding data integration.<br />
+            This solution was the base for the first Data Mart of the company and the creation of the first integrated analytical solution.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 rcmdm">
+        <div class="col-sm-10 col-md-10 col-lg-12 mdm020">
           <h2>In-house Registry and Centralized Master Data</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>Data Architect and Analyst</p>
+          <p>Data Architect and Analyst
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>An in house MDM alike system existed but no analytical solution used it.<br />
-          Several limitations existed and an enormous list of new requirements were waiting to be developed.</p>
+          <p>A simple in house MDM alike system existed but due to technical and business limitations wasn’t used.<br />
+            Besides the known limitations an enormous list of new requirements were waiting to be developed.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>A group of business users decided a new MDM system was needed mainly to standardize analytical data in the company.<br />
-          Business users should be able to manage their own data.<br />
-          MDM should integrate data from all company operational products (several existed).</p>
+          <p>Stakeholders decided a new MDM system was needed mainly to standardize analytical data in the company.<br />
+            Business users should be able to manage their own data (Data owners).<br />
+            MDM should integrate data from all company operational products (several existed).
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>A new in-house MDM solution was created.<br />
-          The system was non-intrusive, meaning no business master data process was changed (for iteration 1). Master data management done in an operational product remained been managed there.<br />
-          The new MDM was registry and centralized type.<br />
-          A GUI was created in order to the business users manage the centralized MDM data as required.<br />
-          The new MDM was the only source for the Conformed Dimension solution in Analytical products.<br />
-          MDM data was also published to every operational products and all interfaces regarding master data between operational products were eliminated improving security and maintenance costs.</p>
+            The system was non-intrusive, meaning no business master data process was changed (for iteration 1).<br />
+            The new MDM was registry and centralized type.<br />
+            A GUI was created in order to Data Owners to manage the centralized MDM data.<br />
+            The new MDM was the only source for the Conformed Dimension of the company.<br />
+            MDM data was published to every operational products. All Master Data interfaces between operational products were eliminated improving security and troubleshooting tasks (maintenance costs).
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 dd">
+        <div class="col-sm-10 col-md-10 col-lg-12 mdm030">
           <h2>Data Dictionary</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p></p>No data dictionary existed in the company.<br />
-          Even many ‘simple’ concepts were defined and explained very differently by different business users.<br />
-          The activity sector was very technical and full of business jargon.<br />
-          Also because of this many business users ended up creating corporate reporting that used the same KPI’s using completely different formulas.</p>
+          <p>No data dictionary existed in the company.<br />
+            Even many ‘simple’ concepts were defined and explained very differently by different business users.<br />
+            Business users create many corporate reporting using similar KPI’s calculated differently between them (differences could be quite huge).
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p></p>Business users wanted a data dictionary tool for corporate use in order to standardize concepts.<br />
-          The project was labelled as strategic.</p>
+          <p>Business users wanted a data dictionary tool for corporate use in order to standardize concepts.<br />
+            Project was labelled as strategic.<br />
+            Company activity sector was very technical and full of business jargon reason why a centralized data dictionary is crucial.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p></p>A data dictionary tool was created.<br />
-          New business processes were created along with roles, data flows and discussion groups.<br />
-          The use of the solution is growing exponentially inside the organization and bring out new concepts and definitions that are been discussed periodically.</p>
+          <p>A data dictionary tool was created.<br />
+            New business processes were created along with roles, data flows and discussion groups.<br />
+            Product use is growing exponentially and is uncovering new concepts and definitions that are been discussed periodically.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 cdg">
+        <div class="col-sm-10 col-md-10 col-lg-12 mdm040">
           <h2>Corporate Data Governance</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>Data Architect, Analyst and Developer</p>
+          <p>Data Architect, Analyst and Developer
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>No established Data Governance solution or rules existed in the company.</p>
+          <p>No established Data Governance solution existed in the company.
+          </p>
 
-
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
           <p>Along with the creation of a new MDM solution business users wanted a Data Governance solution implemented in order to:<br />
-          •	Set data owners<br />
-          •	Define security roles and rules<br />
-          •	Create public data flows and states<br />
-          •	etc.</p>
+            •	Set Data Owners<br />
+            •	Define security roles and rules<br />
+            •	Create public processes and data flows, etc.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>Started around the In-house Registry and Centralized Master Data (see above) a new Data Governance solution was created.<br />
-          New business processes, roles and rules were created.<br />
-          Data owners and data steward’s roles were implemented.<br />
-          Specific tasks were put in place for roles including strategic meetings for corporate strategic data discussions.<br />
-          The nonintrusive approach was used in order to not impact the business (as much as possible).</p>
+            New business processes, roles and rules were created.<br />
+            Data Owners and Data Steward’s roles were implemented.<br />
+            Specific tasks were put in place for roles including strategic meetings for corporate strategic data discussions.<br />
+            All main business requirements were implemented.
+          </p>
+
+        </div>
+
+        <div class="col-sm-10 col-md-10 col-lg-12 mdm050">
+          <h2>Data Masking</h2>
+          <hr>
+          <h5>My role</h5>
+
+          <p>20% as Corporate BI Architect<br />
+            80% as BI Technical responsible, Scrum Master and Development Team            
+          </p>
+
+          <h5>Previous existing product characteristics</h5>
+
+          <p>No Data Masking solution existed in any analytical solution (or similar).<br />
+            Data used is considered highly sensitive (EU standards).            
+          </p>
+
+          <h5>New product requirements (stakeholders view)</h5>
+
+          <p>As part of the Data Governance policy, Product Owner wanted that specific attributes should be masked. Specifically:<br />
+            •	For the entire development environment (wherever the case)<br />
+            •	For preproduction / validation / testing environment<br />
+            •	To all production roles except those specified. Independently if data is seen in corporate reporting or self-service analysis<br />
+            An unmasking service should exist for unmasking data. The use of this service can only be done with previous consent and all details are logged for security reasons.
+          </p>
+
+          <h5>New product characteristics</h5>
+
+          <p>A masking process was created using one-way hash function.<br />
+            The masking process was managed and executed by the infrastructure group.<br />
+            All main business requirements were implemented.
+          </p>
 
         </div>
 
@@ -490,8 +558,8 @@
           <li>
             <ol class="type">
               <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
-              <li><a href="#" data-filter=".gss" class="active">Corporate Self-Service</a></li>
-              <li><a href="#" data-filter=".css">Controlled Self-Service</a></li>
+              <li><a href="#" data-filter=".ss010" class="active">Corporate Self-Service</a></li>
+              <li><a href="#" data-filter=".ss020">Prototyping Self-Service</a></li>
             </ol>
           </li>
         </ul>
@@ -501,96 +569,78 @@
     <div class="row">
       <div class="ss-items">
 
-        <div class="col-sm-10 col-md-10 col-lg-12 gss">
+        <div class="col-sm-10 col-md-10 col-lg-12 ss010">
           <h2>Corporate Self-Service</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>BI Architect, Analyst and Developer</p>
+          <p>BI Architect, Analyst and Developer
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
           <p>Previous reporting tool wasn’t updated for several years and had several known limitations.<br />
-          Only centralized reports from IT department could be publish to the organization.<br />
-          Till then employees were able to:<br />
-          •	change existing analytical reports (very limited) and save them in a personal repository<br />
-          •	create excel files connected to existing DW/DM<br />
-          <br />
-          There wasn’t any self-service corporate publication solution.<br />
-          They could only share the reports/analysis in excel through email or file share.</p>
+            Only centralized reports from IT department could be publish to the organization. <br />
+            Only reports and analysis created in excel where share using email or file repositories.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>A powerful corporate tools is needed for reporting with self-service functionality. New tool must be able to connect to existing and new Multidimensional, Tabular and Dimensional (RDBMS) models.<br />
-          Organization is open to purchase a new tool if justified.<br />
-          The new analytical corporate self-service solution should be created inside/part of the centralized corporate reporting solution.<br />
-          Publication inside each departments and areas is needed. Security segmentation is needed.<br />
-          For 90% of the use cases the solution should be completely autonomous. No IT tasks should exist, only business user’s tasks.</p>
+          <p>Product Owner wanted a self-service solution that could connect to existing and new Multidimensional, Tabular and Dimensional models.<br />
+            The new analytical corporate self-service solution should be created as part of the centralized corporate reporting solution (same tool).<br />
+            Self-Service publication inside each departments and areas was needed.<br />
+            For 90% of the use cases the solution should be completely autonomous. No IT tasks should exist, only business user’s tasks.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>After evaluating corporate and market reporting solutions a new tool is chosen: PowerBI (Azure and On-Premise).<br />
-          For self-service creation and publication, new business processes where designed and the power user role was created.<br />
-          Several repositories where created inside PowerBI for self-service publication. Different corporate segmentations/analysis vectors where taken into account, such as:<br />
-          •	departments<br />
-          •	areas<br />
-          •	product types<br />
-          •	sales regions<br />
-          •	…<br />
-          <br />
-          The new fast and agile solution empowered Business users and they’re now able to create and share new report and analysis using a corporate tool.<br />
-          Excel solution still exists and has now enhanced capacities. It’s completely integrated in the new processes.<br />
-          As wanted, for more than 90% of uses cases no IT task is needed, not even for security management.</p>
+          <p>Solution was created using a new tool: Power BI (Azure and On-Premise).<br />
+            For self-service creation and publication, new business processes where designed and the power user role was created.<br />
+            Several repositories where created inside PowerBI for self-service publication. Different corporate segmentations/analysis vectors where taken into account, such as:<br />
+            •	departments<br />
+            •	areas<br />
+            •	product types<br />
+            •	sales regions, etc.<br />
+            The new fast and agile solution empowered Business users and they’re now able to create and share new report and analysis using a corporate tool.<br />
+            As wanted, for more than 90% of uses cases no IT task is needed, not even for security management.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 css">
-          <h2>Controlled Self-Service</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 ss020">
+          <h2>Prototyping Self-Service</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>Data Architect and Analyst</p>
+          <p>Data Architect and Analyst
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>Corporate centralized reporting tools was Tableau and fulfils most existing requirements.<br />
-          No self-service reporting solution existed.<br />
-          Only centralized reports from IT department could be publish to the organization.<br />
-          Regarding employees self-reporting, they were able to:<br />
-          •	create excel files connected to existing DW/DM and Operational Databases<br />
-          <br />
-          There wasn’t any self-service creation or publication solution.<br />
-          They could only share their personal excel reports/analysis through email or file share.</p>
+          <p>Corporate centralized reporting tools was Tableau.<br />
+            No self-service reporting solution existed.<br />
+            Only centralized reports from IT department could be publish to the organization.<br />
+            Only reports and analysis created in excel where share using email or file repositories.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>Existing centralizer reporting tools can’t change.<br />
-          Two clearly defined integrated solutions should exist inside de same tool:<br />
-          •	repository for corporate reports<br />
-          •	repository for personal prototypes generation (or group)<br />
-          <br />
-          A new powerful corporate solution is needed for self-service reporting. The solution must be able to connect to existing and new Dimensional (RDBMS) models.<br />
-          The creation process should be open to a specific group of employees. They should be able to create ‘personal’ prototypes. Personal publication isn’t allowed.<br />
-          Prototypes after validation and adaptation from IT department can be published<br />
-          Organization is open to purchase a new tool if justified.<br />
-          The new analytical corporate self-service solution should be created inside/part of the centralized corporate reporting solution.<br />
-          Publication inside each departments and areas is needed. Security segmentation is needed.<br />
-          For 90% of the use cases the solution should be completely autonomous. No IT tasks should exist, only business user’s tasks.</p>
+          <p>Product Owner Wanted inside de same tool (Tableau):<br />
+            •	repository for corporate reports<br />
+            •	repository for personal prototypes generation (or group)<br />
+            The solution should be able to connect existing and new Dimensional (RDBMS) models.<br />
+            Self-Service prototype creation process should be open to a specific group of employees. They should be able to create ‘personal’ prototypes.<br />
+            Personal publication to company department and areas shouldn’t be allowed, only for restrictive groups.<br />
+            Prototypes after validation and adaptation from IT department should be published as a corporate solution.<br />
+            All use cases should be set once and no IT tasks should exist, only business user’s tasks.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>After evaluating corporate and market reporting solutions a new tool is chosen: PowerBI (Azure and On-Premise).<br />
-          For self-service creation and publication, new business processes where designed and the power user role was created.<br />
-          Several repositories where created inside PowerBI for self-service publication. Different corporate segmentations/analysis vectors where taken into account, such as:<br />
-          •	departments<br />
-          •	areas<br />
-          •	product types<br />
-          •	sales regions<br />
-          •	…<br />
-          <br />
-          The new fast and agile solution empowered Business users and they’re now able to create and share new report and analysis using a corporate tool.<br />
-          Excel solution still exists and has now enhanced capacities. It’s completely integrated in the new processes.<br />
-          As wanted, for more than 90% of uses cases no IT task is needed, not even for security management.</p>
+          <p>For self-service prototype creation, new business processes where designed and the power user role was created.<br />
+            Several repositories where created inside Tableau for group prototyping publication.<br />
+            As wanted business users were 100% autonomous for prototype creation.
+          </p>
 
         </div>
 
@@ -608,7 +658,7 @@
     <div class="overlay">
       <h2>Dashboards & Balance Scorecards</h2>
       <hr>
-      <p><small>All created in big size companies</small></p>
+      <p><small>All created in big size companies with in-house solutions</small></p>
       <a href="#oth" class="btn btn-custom btn-lg page-scroll">Next section</a>
     </div>
   </div>
@@ -619,9 +669,9 @@
           <li>
             <ol class="type">
               <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
-              <li><a href="#" data-filter=".cbs" class="active">Corporate Balance Scorecard</a></li>
-              <li><a href="#" data-filter=".dpf">Dashboards Program follow-up</a></li>
-              <li><a href="#" data-filter=".pdmd">Production DM Dashboards</a></li>
+              <li><a href="#" data-filter=".dash010" class="active">Healthcare Dashboards & BSC</a></li>
+              <li><a href="#" data-filter=".dash020">Healthcare follow-up Dashboards & BSC</a></li>
+              <li><a href="#" data-filter=".dash030">Human Resources Dashboard</a></li>
             </ol>
           </li>
         </ul>
@@ -631,80 +681,98 @@
     <div class="row">
       <div class="dash-items">
 
-        <div class="col-sm-10 col-md-10 col-lg-12 cbs">
-          <h2>Corporate Balance Scorecards</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 dash010">
+          <h2>Healthcare Dashboards & Balance Scorecards</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>There was no automatic corporate Dashboards or Balance Score Cards (BSC) in the company.<br />
-          Every operational product had a reporting module that calculated their main KPI’s.<br />
-          When needed, the different product KPI’s had to be copied into a common repository/warehouse from where final corporate visualizations were created (no KPI objectives existed).<br />
-          Huge problems existed as consequence of data integration (non-existing).</p>
+          <p>There was no corporate Dashboards or Balance Scorecards (BSC) in the company.<br />
+            Every operational product had a reporting module that calculated their main KPI’s.<br />
+            When needed, different product KPI’s had to be copied into a common repository from where final corporate visualizations were created (no KPI objectives existed).<br />
+            Huge problems existed as consequence of data integration (non-existing).
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
           <p>Several BSC were needed.<br />
-          Several KPI objectives were defined and set.<br />
-          Product owners wanted an automatic corporate Dashboard system. KPI’s in Dashboards should be updated daily, weekly and monthly.</p>
+            Product Owner defined several KPI objectives.<br />
+            An automatic corporate Dashboard system was needed. KPI’s in Dashboards should be updated daily, weekly and monthly.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>With the help of the Centralized KPI Metadata and Repository (see below) several BSC and Dashboards were created for top management and department leaders.<br />
-          Some BSC had fixed KPI objectives and benchmark objectives (same area and same product).</p>
+            Some BSC had fixed KPI objectives, other had benchmark objectives (same area and same product).<br />
+            All main business requirements were implemented.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 dpf">
-          <h2>Dashboards for Strategic Business Programs Follow-up</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 dash020">
+          <h2>Healthcare programs follow-up Dashboards & Balance Scorecards</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>There was no automatic corporate Dashboards in the company.<br />
-          Every operational product had a reporting module that calculated their main KPI’s.<br />
-          When needed, the different product KPI’s had to be copied into a common repository/warehouse from where final corporate visualizations were created.<br />
-          Huge problems existed as consequence of data integration (non-existing).</p>
+          <p>There was no corporate Dashboards or Balance Scorecards (BSC) in the company.<br />
+            Every operational product had a reporting module that calculated their main KPI’s.<br />
+            When needed, different product KPI’s had to be copied into a common repository from where final corporate visualizations were created (no KPI objectives existed).<br />
+            Huge problems existed as consequence of data integration (non-existing).
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>To follow-up the correct implementation of Strategic and Tactical Business Programs several Dashboard must be created.<br />
-          Must be an agile, fast process that should maintain historical data for future checks and for tendencies presentation.</p>
+          <p>To follow-up the correct implementation of Strategic and Tactical Business Programs several Dashboard and BSC must be created.<br />
+            Product Owner wanted an agile, fast system that should maintain historical data for future validation, reference and tendencies presentation.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>With the help of the Centralized KPI Metadata and Repository (see below) several Dashboards were created for top management and department leaders.<br />
-          The Dashboard creation process was relatively easy and performance was really good.<br />
-          Some BSC had fixed KPI objectives and benchmark objectives (same area and same product).</p>
+            The Dashboard creation process was relatively easy and performance was very good.<br />
+            Some BSC had fixed KPI objectives and benchmark objectives (same area and same product).
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 pdmd">
-          <h2>Production Data Mart Dashboards</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 dash030">
+          <h2>Human Resources Dashboard</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
-          <p>Data Architect and Analyst</p>
+          <p>Data Architect, Analyst and Developer
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>xxx</p>
+          <p>A previous Human Resources Dashboard existed with basic information.<br />
+            No Self-Service solution existed.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>xxx</p>
+          <p>Product Owner wanted a new much more complete Dashboard.<br />
+            New solution should include core Human Resources KPI’s such as: Head count; Turnover; HR to FTE; Voluntary/Involuntary Termination; Absenteeism; etc.<br />
+            Along with corporate reporting a Self-Service solution should exist with power users inside HR department.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>xxx</p>
+          <p>A new Dashboard was created using Power BI.<br />
+            The power user role was created and the Self-Service solution was implemented in the department.<br />
+            All main business requirements were implemented, including all desired KPI’s.
+          </p>
 
         </div>
 
@@ -720,9 +788,9 @@
 <div id="oth">
   <div class="section-title text-center center">
     <div class="overlay">
-      <h2>Other Projects</h2>
+      <h2>Other Data related products</h2>
       <hr>
-      <p><small>All created in big size companies</small></p>
+      <p><small>All created in big size companies with in-house solutions</small></p>
       <a href="#ml" class="btn btn-custom btn-lg page-scroll">Next section</a>
     </div>
   </div>
@@ -733,10 +801,10 @@
           <li>
             <ol class="type">
               <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
-              <li><a href="#" data-filter=".cs" class="active">Clustering & Scoring</a></li>
-              <li><a href="#" data-filter=".da">Data Audit</a></li>
-              <li><a href="#" data-filter=".ma">Monitoring Analytical</a></li>
-              <li><a href="#" data-filter=".cdg">Centralized KPI</a></li>
+              <li><a href="#" data-filter=".oth010" class="active">Integrate Segmentation</a></li>
+              <li><a href="#" data-filter=".oth020">Data Audit</a></li>
+              <li><a href="#" data-filter=".oth030">Monitoring Analytical Products</a></li>
+              <li><a href="#" data-filter=".oth040">Centralized KPI Module</a></li>
             </ol>
           </li>
         </ul>
@@ -746,122 +814,135 @@
     <div class="row">
       <div class="oth-items">
 
-        <div class="col-sm-10 col-md-10 col-lg-12 cs">
-          <h2>Integration of Clustering and Scoring Data in Data Mart</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 oth010">
+          <h2>Integrate Segmentation and Scoring in Data Mart</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>No ML system output were integrated into the analytical solution (DM).</p>
+          <p>No ML system output was ever integrated into the analytical solution (DM).
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
           <p>Segmentation and Scoring data created in a separate ML project adds a huge business values so Product Owner want it to be integrated in existing Data Mart.<br />
-          PO also want a periodic execution of this solution.<br />
-          Nobody wants to add ML execution time in top of current analytical solution. A one day delay (for segmentation and scoring data) is not important to business users.</p>
+            Product Owner also want the clustering system to be executed periodically.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>The ML solution executes regularly outside the analytical system.<br />
-          The analytical system collects segmentation and scoring output data and integrates it completely on specific business processes inside de Data Mart. This is done daily independently of ML project execution.</p>
+          <p>The ML solution executes regularly outside the analytical system (as desired in order to not impact analytical execution).<br />
+            The analytical system collects segmentation and scoring output data and integrates it completely on specific business processes inside de Data Mart. This is done daily independently of ML project execution.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 da">
+        <div class="col-sm-10 col-md-10 col-lg-12 oth020">
           <h2>Data Audit</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
           <p>No data audit existed.<br />
-          Several, mostly manual checks, where done periodically on operational products.<br />
-          The cost of these processes was very high: many people for a long time (periodically).<br />
-          There was no integration data auditing (operational products as silos).</p>
+            Several, mostly manual checks, where done periodically on operational products.<br />
+            The cost of these processes was very high and done often.<br />
+            There was no integration data auditing (operational products as silos).
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>Product owner doesn’t want data to be changed / corrected in analytical solutions.<br />
-          For every data problem or improvement a business process should exist in order to change that data on data sources (operational products).</p>
+          <p>Product owner doesn’t want data to be changed / corrected in analytical solutions but in source operational systems.<br />
+            For every data problem or improvement a business process should exist in order to allow changes on data sources.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>Created and documented new business processes for data correction or improvement.<br />
-          A new audit product was created and is executed after the Analytical execution ends.<br />
-          Looking in all Analytical products repositories (Integration, Data Mart, MDM, .etc) the system is able to detect data to be improved and notifications are send following the business process defined.<br />
-          The system is easily managed, scalable and has no impact on the Analytical products execution.</p>
+            A new audit product was created and is executed after the Analytical execution ends.<br />
+            Looking in all Analytical products repositories (Integration, Data Mart, MDM, .etc) the system is able to detect data to be improved/corrected and notifications are send following the business process defined.<br />
+            The system is easily managed, scalable and has no impact on the Analytical products execution (as desired).
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 ma">
+        <div class="col-sm-10 col-md-10 col-lg-12 oth030">
           <h2>Monitoring Analytical Products</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-          80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
-          <p>Only basic monitoring existed for analytical solution.<br />
-          Basically only the main triggers were monitored and a good bad execution output was generated. An email was sent for a couple of specific IT roles.</p>
+          <p>Only basic monitoring existed for analytical solution.
+          </p>
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
-          <p>Different business roles wanted different kinds of notifications.<br />
-          Technical users wanted more information regarding analytical solutions execution, they were especially interest in data that will allow them to be more proactive.</p>
+          <p>Different business roles wanted different kinds of notifications.
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
-          <p>Created and documented new monitoring roles for business notifications, the product owner manages which data to forwarded to business roles.<br />
-          For Technical users a Dashboard was created with time and volume execution regarding all Analytical solution and their tasks. Due to this, new items are now added to backlog in order to proactively detect and eliminate future problems.</p>
+          <p>Created and documented new monitoring roles for business notifications.<br />
+            The product owner manages which data is forwarded to which business roles.<br />
+            For Technical users a Dashboard was created with time and volume execution regarding all Analytical solution and their tasks. Due to this, new items are now added regularly to backlog in order to proactively detect and eliminate future problems.
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 cdg">
+        <div class="col-sm-10 col-md-10 col-lg-12 oth040">
           <h2>Centralized KPI Metadata and Repository</h2>
           <hr>
-          <h5>My Role</h5>
+          <h5>My role</h5>
 
           <p>20% as Corporate BI Architect<br />
-            80% as BI Technical responsible, Scrum Master and Development Team</p>
+            80% as BI Technical responsible, Scrum Master and Development Team
+          </p>
 
-          <h5>Previous Existing Solution</h5>
+          <h5>Previous existing product characteristics</h5>
 
           <p>There’s no KPI corporate solution, meaning there’s no centralized product for KPI definition, execution, warehousing or documentation.<br />
-          There was no single source of truth for KPI’s, so different employees generated similar KPI and Dashboards using personal definition and formulas that don’t match between them.</p>
+            There was no single source of truth for KPI’s, so different employees generated similar KPI and Dashboards using personal definition and formulas that don’t match between them.
+          </p>
 
 
-          <h5>New Requirements</h5>
+          <h5>New product requirements (stakeholders view)</h5>
 
           <p>In order to have a single source of the truth the company wants a centralized solution for KPI definition and formulas.<br />
-          The KPI results will be used in corporate reporting where historical data must exist (for tendencies).<br />
-          There’s a need to present the KPI results to some business user through self-service in order for them to use in their own reports.<br />
-          Due to the volume and complexity of some KPI the product owner wants then to be pre-calculated (if possible).</p>
+            The KPI results will be used in corporate reporting where historical data must exist (for tendencies and historical integrity).<br />
+            There’s a need to present the KPI results to some business user through self-service in order for them to use in their own reports.<br />
+            Due to the volume and complexity of some KPI the product owner wants then to be pre-calculated (if possible).
+          </p>
 
-          <h5>New Solution Characteristics</h5>
+          <h5>New product characteristics</h5>
 
           <p>Created and documented new business processes for KPI definition and usage.<br />
-          Created a centralized KPI Metadata product for:<br />
-          •	Business definition<br />
-          o	Concepts definition<br />
-          o	KPI definition<br />
-          •	Technical definition<br />
-          o	Business concepts – Data Mart attributes mapping<br />
-          o	KPI calculation formula<br />
-          •	Execution scheduler<br />
-          <br />
-          The KPI Metadata product has one business owner role (1) and several business users (N).<br />
-          Created a KPI execution system for daily pre-calculated KPI creation.<br />
-          Created a corporate KPI repository inside de Data Mart for saving KPI pre-calculated results. Historical data is maintained.<br />
-          Security implemented in all 3 modules using business roles defined on business processes.</p>
+            Created a centralized KPI Metadata product for:<br />
+            •	Business definition<br />
+            ---	Concepts definition<br />
+            ---	KPI definition<br />
+            •	Technical definition<br />
+            ---	Business concepts – Data Mart attributes mapping<br />
+            ---	KPI calculation formula<br />
+            •	Execution scheduler<br />
+            The KPI Metadata product has one business owner role (1) and several business users (N).<br />
+            Created a KPI execution system for daily pre-calculated KPI creation.<br />
+            Created a corporate KPI repository inside de Data Mart for saving KPI pre-calculated results. Historical data is maintained.<br />
+            Security implemented in all 3 modules using business roles defined on business processes.
+          </p>
 
         </div>
 
@@ -879,7 +960,7 @@
     <div class="overlay">
       <h2>Machine Learning</h2>
       <hr>
-      <p><small>Academic projects made during personal training</small></p>
+      <p><small>All ML projects are part of my training experience</small></p>
       <a href="#page-top" class="btn btn-custom btn-lg page-scroll">Top</a>
     </div>
   </div>
@@ -890,8 +971,10 @@
           <li>
             <ol class="type">
               <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
-              <li><a href="#" data-filter=".clu" class="active">Clustering</a></li>
-              <li><a href="#" data-filter=".linr">Linear Regression</a></li>
+              <li><a href="#" data-filter=".ml010" class="active">Train & Test DS</a></li>
+              <li><a href="#" data-filter=".ml020">Cleansing</a></li>
+              <li><a href="#" data-filter=".ml030">Clustering Algorithm</a></li>
+              <li><a href="#" data-filter=".ml040">Linear Regression Algorithm</a></li>
             </ol>
           </li>
         </ul>
@@ -901,20 +984,43 @@
     <div class="row">
       <div class="ml-items">
 
-        <div class="col-sm-10 col-md-10 col-lg-12 clu">
-          <h2>Clustering</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 ml010">
+          <h2>Train and Test Dataset Creation</h2>
           <hr>
-          <h5>K-Means</h5>
+          <h5></h5>
 
-          <p>Training...</p>
+          <p>In process
+          </p>
 
         </div>
 
-        <div class="col-sm-10 col-md-10 col-lg-12 linr">
-          <h2>Linear Regression</h2>
+        <div class="col-sm-10 col-md-10 col-lg-12 ml020">
+          <h2>Cleansing Process</h2>
           <hr>
+          <h5></h5>
 
-          <p>Training...</p>
+          <p>In process
+          </p>
+
+        </div>
+
+        <div class="col-sm-10 col-md-10 col-lg-12 ml030">
+          <h2>Clustering Algorithm</h2>
+          <hr>
+          <h5></h5>
+
+          <p>In process
+          </p>
+
+        </div>
+
+        <div class="col-sm-10 col-md-10 col-lg-12 ml040">
+          <h2>Linear Regression Algorithm</h2>
+          <hr>
+          <h5></h5>
+
+          <p>In process
+          </p>
 
         </div>
 
@@ -1156,12 +1262,12 @@
     <div class="col-md-8 col-md-offset-2">
       <div class="social">
         <ul>
-          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-github"></i></a></li>
+          <!--<li><a href="#"><i class="fa fa-envelope"></i></a></li>-->
+          <li><a href="https://www.linkedin.com/in/claudio-de-freitas-caires/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/ClaudioCaires"><i class="fa fa-github"></i></a></li>
         </ul>
       </div>
-      <p>&copy; Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+      <p>&copy; 2020 Claudio Caires. All rights reserved. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
     </div>
   </div>
 </div>

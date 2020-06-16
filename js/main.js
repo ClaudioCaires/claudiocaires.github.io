@@ -42,10 +42,7 @@ function main() {
     }
   });
 	
-    // ********** ********** ********** ********** ********** ********** ********** ********** ********** **********
   	// Portfolio isotope filter
-    // ********** ********** ********** ********** ********** ********** ********** ********** ********** **********
-
     $(window).load(function() {
         var $container = $('.portfolio-items');
         $container.isotope({
@@ -82,7 +79,7 @@ function main() {
       var $container = $('.dwh-items');
       $container.isotope({
           //filter: '*',
-          filter: '.hdmscd0',
+          filter: '.dwh010',
           animationOptions: {
               duration: 750,
               easing: 'linear',
@@ -114,7 +111,7 @@ function main() {
       var $container = $('.mdm-items');
       $container.isotope({
           //filter: '*',
-          filter: '.rmdm',
+          filter: '.mdm010',
           animationOptions: {
               duration: 750,
               easing: 'linear',
@@ -146,7 +143,7 @@ function main() {
       var $container = $('.ss-items');
       $container.isotope({
           //filter: '*',
-          filter: '.gss',
+          filter: '.ss010',
           animationOptions: {
               duration: 750,
               easing: 'linear',
@@ -178,7 +175,7 @@ function main() {
         var $container = $('.dash-items');
         $container.isotope({
             //filter: '*',
-            filter: '.cbs',
+            filter: '.dash010',
             animationOptions: {
                 duration: 750,
                 easing: 'linear',
@@ -201,7 +198,7 @@ function main() {
         });
   
     });
-
+  
     // ********** ********** ********** ********** ********** ********** ********** ********** ********** **********
   	// oth isotope filter [copy of Portfolio isotope filter]
     // ********** ********** ********** ********** ********** ********** ********** ********** ********** **********
@@ -210,7 +207,7 @@ function main() {
         var $container = $('.oth-items');
         $container.isotope({
             //filter: '*',
-            filter: '.cs',
+            filter: '.oth010',
             animationOptions: {
                 duration: 750,
                 easing: 'linear',
@@ -233,7 +230,7 @@ function main() {
         });
   
     });
-
+  
     // ********** ********** ********** ********** ********** ********** ********** ********** ********** **********
   	// ml isotope filter [copy of Portfolio isotope filter]
     // ********** ********** ********** ********** ********** ********** ********** ********** ********** **********
@@ -242,7 +239,7 @@ function main() {
         var $container = $('.ml-items');
         $container.isotope({
             //filter: '*',
-            filter: '.clu',
+            filter: '.ml010',
             animationOptions: {
                 duration: 750,
                 easing: 'linear',
@@ -265,7 +262,7 @@ function main() {
         });
   
     });
-      
+  
     // Nivo Lightbox 
     $('.portfolio-item a').nivoLightbox({
             effect: 'slideDown',  

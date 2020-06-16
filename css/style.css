@@ -146,8 +146,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .section-title .overlay {
 	/*padding: 80px 0;*/
-	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 15px;
 	background: rgba(0, 0, 0, 0.7);
 }
 .section-title p {
@@ -156,7 +156,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .section-title hr {
 	margin: 0 auto;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
+	margin-bottom: 15px;
 }
 .btn-custom {
 	text-transform: uppercase;
@@ -172,7 +173,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	letter-spacing: 0.5px;
 	border-radius: 0;
 	/*margin-top: 20px;*/
-	margin-top: 0px;
+	margin-top: 10px;
 	transition: all 0.5s;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
@@ -214,15 +215,16 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #fff;
 	font-size: 32px;
 	font-weight: 300;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
+	margin-top: 20px;
 	/*margin-bottom: 40px;*/
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 header .intro-text {
 	/*padding-top: 250px;*/
 	padding-top: 160px;
 	/*padding-bottom: 200px;*/
-	padding-bottom: 40px;
+	padding-bottom: 15px;
 	text-align: center;
 }
 
@@ -259,6 +261,7 @@ header .intro-text {
 	line-height: 24px;
 	/*margin: 15px 0 30px;*/
 	margin: 10px 0 15px;
+	font-size: 15px;
 }
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
@@ -321,7 +324,7 @@ header .intro-text {
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
 /* Portfolio Section */
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
-/*
+
 #Portfolio {
 	padding: 0 0 120px 0;
 }
@@ -370,9 +373,9 @@ ol.type li a:hover {
 .isotope-hidden.isotope-item {
 	z-index: 1
 }
-.isotope, .isotope .isotope-item {*/
+.isotope, .isotope .isotope-item {
 	/* change duration value to whatever you like */
-/*	-webkit-transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
 	-moz-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 }
@@ -442,7 +445,7 @@ ol.type li a:hover {
 }
 .hover-bg:hover .hover-text {
 	opacity: 1;
-}*/
+}
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
 /* dwh Section [copy of * Portfolio Section *]*/
@@ -465,7 +468,7 @@ ol.type li a:hover {
 	padding-bottom: 15px;
 	text-align: center;
 }
-ul.catdwh li {
+ul.cat li {
 	display: inline-block;
 }
 ol.type li {
@@ -574,6 +577,10 @@ ol.type li a:hover {
 
 #dwh p {
 	margin: 0 0 15px;
+	font-size: 15px;
+}
+#dwh hr {
+	margin-bottom: 25px;
 }
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
@@ -597,7 +604,7 @@ ol.type li a:hover {
 	padding-bottom: 15px;
 	text-align: center;
 }
-ul.catmdm li {
+ul.catdwh li {
 	display: inline-block;
 }
 ol.type li {
@@ -707,6 +714,9 @@ ol.type li a:hover {
 #mdm p {
 	margin: 0 0 15px;
 }
+#mdm hr {
+	margin-bottom: 25px;
+}
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
 /* ss Section [copy of * Portfolio Section *]*/
@@ -729,7 +739,7 @@ ol.type li a:hover {
 	padding-bottom: 15px;
 	text-align: center;
 }
-ul.catss li {
+ul.catdwh li {
 	display: inline-block;
 }
 ol.type li {
@@ -839,6 +849,9 @@ ol.type li a:hover {
 #ss p {
 	margin: 0 0 15px;
 }
+#ss hr {
+	margin-bottom: 25px;
+}
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
 /* dash Section [copy of * Portfolio Section *]*/
@@ -861,7 +874,7 @@ ol.type li a:hover {
 	padding-bottom: 15px;
 	text-align: center;
 }
-ul.catdash li {
+ul.catdwh li {
 	display: inline-block;
 }
 ol.type li {
@@ -971,6 +984,9 @@ ol.type li a:hover {
 #dash p {
 	margin: 0 0 15px;
 }
+#dash hr {
+	margin-bottom: 25px;
+}
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
 /* oth Section [copy of * Portfolio Section *]*/
@@ -993,7 +1009,7 @@ ol.type li a:hover {
 	padding-bottom: 15px;
 	text-align: center;
 }
-ul.catoth li {
+ul.catdwh li {
 	display: inline-block;
 }
 ol.type li {
@@ -1103,6 +1119,9 @@ ol.type li a:hover {
 #oth p {
 	margin: 0 0 15px;
 }
+#oth hr {
+	margin-bottom: 25px;
+}
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
 /* ml Section [copy of * Portfolio Section *]*/
@@ -1125,7 +1144,7 @@ ol.type li a:hover {
 	padding-bottom: 15px;
 	text-align: center;
 }
-ul.catml li {
+ul.catdwh li {
 	display: inline-block;
 }
 ol.type li {
@@ -1234,6 +1253,9 @@ ol.type li a:hover {
 
 #ml p {
 	margin: 0 0 15px;
+}
+#ml hr {
+	margin-bottom: 25px;
 }
 
 /* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
@@ -1410,8 +1432,7 @@ color: #777;
 
 #footer {
 	background: #262626;
-	/*padding: 50px 0 0 0;*/
-	padding: 0 0 0 0;
+	padding: 50px 0 0 0;
 }
 #footer h3 {
 	color: #8eb640;
