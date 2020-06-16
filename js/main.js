@@ -79,7 +79,7 @@ function main() {
       var $container = $('.dwh-items');
       $container.isotope({
           //filter: '*',
-          filter: '.dwh010',
+          filter: '.dwh',
           animationOptions: {
               duration: 750,
               easing: 'linear',
