@@ -268,48 +268,42 @@ function main() {
             effect: 'slideDown',  
             keyboardNav: true,                            
         });
-}());
   
-// Nivo Lightbox 
-$('.dwh-item a').nivoLightbox({
-        effect: 'slideDown',  
-        keyboardNav: true,                            
-    });
-}());
+    // Nivo Lightbox 
+    $('.dwh-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
   
-// Nivo Lightbox 
-$('.mdm-item a').nivoLightbox({
-        effect: 'slideDown',  
-        keyboardNav: true,                            
-    });
-}());
-  
-// Nivo Lightbox 
-$('.ss-item a').nivoLightbox({
-        effect: 'slideDown',  
-        keyboardNav: true,                            
-    });
-}());
-  
-// Nivo Lightbox 
-$('.dash-item a').nivoLightbox({
-        effect: 'slideDown',  
-        keyboardNav: true,                            
-    });
-}());
-  
-// Nivo Lightbox 
-$('.oth-item a').nivoLightbox({
-        effect: 'slideDown',  
-        keyboardNav: true,                            
-    });
-}());
-  
-// Nivo Lightbox 
-$('.ml-item a').nivoLightbox({
-        effect: 'slideDown',  
-        keyboardNav: true,                            
-    });
+    // Nivo Lightbox 
+    $('.mdm-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
+    
+    // Nivo Lightbox 
+    $('.ss-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
+    
+    // Nivo Lightbox 
+    $('.dash-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
+    
+    // Nivo Lightbox 
+    $('.oth-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
+    
+    // Nivo Lightbox 
+    $('.ml-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
 }());
 
 
